@@ -1,0 +1,23 @@
+Paint is the main driver class.  It sets up the GUI and runs the program with the game loop, calling on every other class contained.
+
+DrawLine, DrawPolyLine, DrawRect, and FreeDraw are all classes that contain the specific input processing and rendering for each tool.
+They also store all the points drawn for each tool in their respective methods.
+
+ColorPoint is a class that extends the Point class and adds a color to it, so that the color the user has selected at that point is saved
+for each time it is rendered, even if the color is later changed.
+
+MyButton is a class that lets me draw custom images on the tool and color selection buttons.
+
+KeyboardInput and RelativeMouseInput are classes that get input from those respective tools that the user gives them.  These also the
+user to draw and clear the canvas.
+
+This is ClassDesign, where I explain my class organization 
+
+I put all the classes that process input and render to the screen in one package, paintApp.  This is also where the main driver class is
+located.  (I also stored ClassDesign here, in the same place as Paint.)
+
+I put the rest of the classes in the other package, paintUtil, as they get input or store things to help the main classes.
+
+Finally, I stored paintApp and paintUtil all in package JavaPaint, the name of the game.
+
+-Al Ohlinger
